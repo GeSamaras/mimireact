@@ -42,4 +42,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 # repo
-.t3gallery
+/t3gallery
