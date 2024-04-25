@@ -1,4 +1,12 @@
+// changing ts version to this specific workspace so all the autocomplete and such is consistent
+
 import Link from "next/link";
+import { db } from "~/server/db";
+
+// forcing dynamic so every time a change is made in the db
+// the page's content gets updated on the next reload
+export const dynamic = "force-dynamic"
+
 
 const templateUrls = [
   "https://utfs.io/f/416fb5d1-2e00-4858-a3d5-7043bda40b95-mep7mc.jpg",
@@ -12,12 +20,26 @@ const templateImage = templateUrls.map((url, index) =>({
   url,
 }))
 
-export default function HomePage() {
+// this homepage component is running on the server only, not the client
+// react server side rendering makes it so we can have server calls and SQL queries
+// directly in components
+
+// turning this func into async so all the images in the db get called properly
+export default async function HomePage() {
+
+  // when this gets deployed, the page gets cached in the server
+  // making this route dynamic means that nextjs will change the page
+  // for the client on every refresh or call
+  const posts = await db.query.posts.findMany()
+  console.log(posts)
+
   return (
     <main className="">
       <div className="flex flex-wrap gap-4">{
-      [...templateImage, ...templateImage, ...templateImage].map((image) => (
-        <div key={image.id} className="w-48">
+      [...templateImage, ...templateImage, ...templateImage].map((image, index) => (
+        // some weird error happens when this key isn't turned into a string
+        // hence the "-"
+        <div key={image.id + "-" + index} className="w-48">
           <img src={image.url} />
         </div>
       ))}
