@@ -16,7 +16,7 @@ import {
  *
  * @see https://orm.drizzle.team/docs/goodies#multi-project-schema
  */
-export const createTable = pgTableCreator((name) => `t3gallery_${name}`);
+export const createTable = pgTableCreator((name) => `mimireact_${name}`);
 
 export const images = createTable(
   "image",
