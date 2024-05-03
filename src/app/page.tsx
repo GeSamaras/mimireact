@@ -11,7 +11,7 @@ async function Images() {
   return (
     <div className="flex flex-wrap justify-center gap-4 p-4">
       {images.map((image) => (
-        <div key={image.id} className="flex h-48 w-48 flex-col">
+        <div key={image.id} className="flex flex-col justify-between overflow-hidden rounded-lg hover:shadow-lg   transition duration-300 transform hover:scale-105">
           <Link href={`/img/${image.id}`}>
             <Image
               src={image.url}
@@ -21,7 +21,7 @@ async function Images() {
               alt={image.name}
             />
           </Link>
-          <div>{image.name}</div>
+          
         </div>
       ))}
     </div>
