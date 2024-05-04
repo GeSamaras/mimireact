@@ -8,7 +8,9 @@ import { SimpleUploadButton } from "./simple-upload-button";
 
 export function TopNav() {
   return (
-    <nav className=" flex w-full items-center justify-between p-4 text-xl font-light">
+    <nav className="flex w-full items-center justify-evenly p-4 text-xl font-extrabold 
+    bg-[url('https://utfs.io/f/f8a69125-fdcd-47fa-ac61-c9f0f364ce01-heo5io.jpeg')] bg-cover
+    ">
       <div>mimireact</div>
 
       <div className="flex flex-row items-center gap-4 ">

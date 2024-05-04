@@ -11,22 +11,22 @@ export async function FullPageImageView(props: { photoId: string }) {
   const userInfo = await clerkClient.users.getUser(image.userId);
 
   return (
-    <div className="flex  p-8 border-spacing-4 justify-center text-white">
-      <div className="flex-shrink justify-evenly  ">
-        <img src={image.url} className="object-contain " alt={image.name} />
+    <div className="flex p-16 justify-center bg-clip-text text-white">
+      <div className="flex-shrink justify-evenly ">
+        <img src={image.url} className="object-contain  " alt={image.name} />
       </div>
-      <div className="flex justify-evenly flex-shrink-0 flex-col border-10 ">
-        <div className="p-2">
+      <div className="flex justify-evenly flex-shrink-0 flex-col border-10  ">
+        <div className="p-16">
           <div>Uploaded By:</div>
           <div>{userInfo.fullName}</div>
         </div>
 
-        <div className="p-2">
+        <div className="p-16">
           <div>Created On:</div>
           <div>{image.createdAt.toLocaleDateString()}</div>
         </div>
 
-        <div className="p-2">
+        <div className="p-16">
           <form
             action={async () => {
               "use server";
