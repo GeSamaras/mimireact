@@ -1,5 +1,5 @@
 import { SignedIn, SignedOut } from "@clerk/nextjs";
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { getMyImages } from "~/server/queries";
 
@@ -13,7 +13,7 @@ async function Images() {
       {images.map((image) => (
         <div key={image.id} className="relative">
           <Link href={`/img/${image.id}`}>
-            <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-lg break-inside-avoid gap-8 p-2 transition duration-300 transform hover:scale-105">
+            <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-xl break-inside-avoid gap-8 m-3 transition duration-300 transform hover:scale-105 outline outline-slate-600 opacity-90">
               <img
                 src={image.url}
                 alt={image.name}
@@ -27,6 +27,8 @@ async function Images() {
   );
 }
 
+// posts only show to signed in users to prevent bad users
+// without it getting shown on posthog
 export default async function HomePage() {
   return (
     <main className="">

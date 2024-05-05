@@ -1,9 +1,7 @@
 import "~/styles/globals.css";
 import "@uploadthing/react/styles.css";
-
 import { ClerkProvider } from "@clerk/nextjs";
-
-import { Inter } from "next/font/google";
+import { Pixelify_Sans } from "next/font/google";
 import { TopNav } from "./_components/topnav";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
@@ -11,9 +9,10 @@ import { ourFileRouter } from "./api/uploadthing/core";
 import { Toaster } from "~/components/ui/sonner";
 import { CSPostHogProvider } from "./_analytics/provider";
 
-const inter = Inter({
+// googlefonts next docs
+// https://nextjs.org/docs/app/building-your-application/optimizing/fonts#google-fonts
+const pixel = Pixelify_Sans({
   subsets: ["latin"],
-  variable: "--font-sans",
 });
 
 export const metadata = {
@@ -42,7 +41,7 @@ export default function RootLayout({
              */
             routerConfig={extractRouterConfig(ourFileRouter)}
           />
-          <body className={`font-sans ${inter.variable} dark `}>
+          <body className={` ${pixel.className} dark `}>
             <div className="grid h-screen grid-rows-[auto,1fr] bg-gradient-to-r from-purple-500 to-teal-400">
               <TopNav />
               <main className="overflow-y-scroll">{children}</main>

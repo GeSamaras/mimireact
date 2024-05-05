@@ -6,6 +6,7 @@ import { and, eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
 import analyticsServerClient from "./analytics";
 
+// 
 export async function getMyImages() {
   const user = auth();
 
@@ -20,9 +21,13 @@ export async function getMyImages() {
 }
 
 export async function getImage(id: number) {
+
   const user = auth();
   if (!user.userId) throw new Error("Unauthorized");
 
+  // runs through the db to get all images
+  // page and full-page-image files are using this query for now
+  // need this for albums
   const image = await db.query.images.findFirst({
     where: (model, { eq }) => eq(model.id, id),
   });
@@ -35,12 +40,14 @@ export async function getImage(id: number) {
 
 export async function deleteImage(id: number) {
   const user = auth();
+  // checks if the user pressing "delete" is the author
   if (!user.userId) throw new Error("Unauthorized");
 
   await db
     .delete(images)
     .where(and(eq(images.id, id), eq(images.userId, user.userId)));
 
+  // some alerts for posthog to process
   analyticsServerClient.capture({
     distinctId: user.userId,
     event: "delete image",

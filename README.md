@@ -10,7 +10,6 @@ Vercel Nextjs TailwindCSS Clerk Posthog DrizzleORM Upstash Uploadthing Sentry
 
 ## Stuff to add
 
-- Fix the page layout for images of different resolutions
 - "Selecting" images on the gallery page
 - "infinite scroll" (https://www.youtube.com/watch?v=IFYFezylQlI)
 - Folders/albums
