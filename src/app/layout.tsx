@@ -9,6 +9,7 @@ import { ourFileRouter } from "./api/uploadthing/core";
 import { Toaster } from "~/components/ui/sonner";
 import { CSPostHogProvider } from "./_analytics/provider";
 
+
 // googlefonts next docs
 // https://nextjs.org/docs/app/building-your-application/optimizing/fonts#google-fonts
 const pixel = Pixelify_Sans({

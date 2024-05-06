@@ -16,7 +16,11 @@ Vercel Nextjs TailwindCSS Clerk Posthog DrizzleORM Upstash Uploadthing Sentry
 - Image censoring (Azure Computer Vision/Sightengine/Google Cloud Vision)
 - BG and Topnav images
 - Custom cursor
-- Comments (https://ui.shadcn.com/docs/components/textarea)
+- User's comments on pics
 - Carousel image scrolling (https://ui.shadcn.com/docs/components/carousel)
 - Nested Groups for the album's page maybe? (https://ui.shadcn.com/docs/components/resizable)
 
+
+## Things done for now
+
+- Comment box [X]
