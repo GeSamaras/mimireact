@@ -4,7 +4,8 @@ import Link from "next/link";
 import { getMyImages } from "~/server/queries";
 
 
-
+// https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+// 
 export const dynamic = "force-dynamic";
 
 async function Images() {

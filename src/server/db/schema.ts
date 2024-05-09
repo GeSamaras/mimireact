@@ -36,3 +36,25 @@ export const images = createTable(
     nameIndex: index("name_idx").on(example.name),
   }),
 );
+
+
+// TODO implement the comments section tables into the schema
+/* export const comments = createTable(
+  "comment",
+  {
+  comment: varchar("userComment", { length: 512}).notNull(),
+
+  id: serial("id").primaryKey(),
+  name: varchar("name", { length: 256 }).notNull(),
+  url: varchar("url", { length: 1024 }).notNull(),
+
+  // queries for the user id, and confirms its not null
+  userId: varchar("userID", { length: 256}).notNull(),
+
+  createdAt: timestamp("created_at")
+  .default(sql`CURRENT_TIMESTAMP`)
+  .notNull(),
+
+  updatedAt: timestamp("updatedAt"),
+
+}) */
