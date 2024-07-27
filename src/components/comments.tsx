@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 
-const CreatePostWizard = () => {
+/* const CreatePostWizard = () => {
     // check if user is signed in
  
     
@@ -25,4 +25,4 @@ return (
     </div>
     </div>
 )
-}
+} */
