@@ -2,6 +2,8 @@
 
 An imageboard, with pinterest-y vibes, for cool pics and cool poeple 🤠
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Sj9nbNh" data-context="false" ><a href="//imgur.com/a/Sj9nbNh"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![mimireact](https://i.imgur.com/8hi5q5u.gif)
 
 ## Stack
 
