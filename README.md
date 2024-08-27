@@ -3,6 +3,7 @@
 An imageboard, with pinterest-y vibes, for cool pics and cool poeple 🤠
 
 [mimi](https://imgur.com/8hi5q5u)
+[mimi](https://imgur.com/ppHK95D)
 
 ![mimireact](https://i.imgur.com/8hi5q5u.gif "bro just work") 
 
