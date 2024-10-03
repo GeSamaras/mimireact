@@ -5,7 +5,7 @@ An imageboard, with pinterest-y vibes, for cool pics and cool poeple 🤠
 [mimi](https://imgur.com/8hi5q5u)
 [mimi](https://imgur.com/ppHK95D)
 
-![mimireact](https://i.imgur.com/8hi5q5u.gif "bro just work") 
+![mimireact](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmRxdWk2MnU3ODRtYnF5cnU1YXFxajB5amoza2ZlbzQ3aXM4aWQ3cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SbPtsV10EW2lj4SeFY/giphy-downsized-large.gif "bro just work") 
 
 ## Stack
 
