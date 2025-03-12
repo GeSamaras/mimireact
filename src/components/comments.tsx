@@ -1,7 +1,7 @@
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 
-/* const CreatePostWizard = () => {
+const CreatePostWizard = () => {
     // check if user is signed in
  
     
@@ -11,7 +11,7 @@ return (
         <Textarea placeholder="your cool message here"/> 
     </div>
 
-    <div className="p-8">
+    <div className="p-16">
         <form
         action={async () => {
             "use server";
@@ -21,8 +21,9 @@ return (
         <Button type="submit" variant="default">
             Comment
         </Button>
+        
         </form>
     </div>
     </div>
 )
-} */
+}

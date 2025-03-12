@@ -28,9 +28,9 @@ export async function FullPageImageView(props: { photoId: string }) {
   const userInfo = await clerkClient.users.getUser(image.userId);
 
   return (
-    <div className="grid  justify-center text-white border-16 p-8 ">
-      <div className="flex justify-center">
-        <img src={image.url} className="object-contain" alt={image.name} />
+    <div className="grid justify-center text-white border-16 p-8 w-auto ">
+      <div className="flex justify-center rounded-xl h-auto w-fit">
+        <img src={image.url} className="object-contain w-auto h-fit rounded-xl" alt={image.name} />
       </div>
       <div className="flex flex-col justify-center">
         <div className="flex">
@@ -44,11 +44,11 @@ export async function FullPageImageView(props: { photoId: string }) {
           <div>{image.createdAt.toLocaleDateString()}</div>
         </div>
 
-        <div className="flex w-auto">
+        <div className="flex w-auto  border-2">
           <Textarea placeholder="your cool message here"/> 
         </div>
 
-        <div className="flex">
+        <div className="flex p-2">
           <form
             action={async () => {
               "use server";
@@ -61,7 +61,7 @@ export async function FullPageImageView(props: { photoId: string }) {
           </form>
         </div>
 
-        <div className="flex">
+        <div className="flex px-2">
           <form
             action={async () => {
               "use server";
