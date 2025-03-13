@@ -11,7 +11,7 @@ return (
         <Textarea placeholder="your cool message here"/> 
     </div>
 
-    <div className="p-8">
+    <div className="p-16">
         <form
         action={async () => {
             "use server";
@@ -21,6 +21,7 @@ return (
         <Button type="submit" variant="default">
             Comment
         </Button>
+        
         </form>
     </div>
     </div>
