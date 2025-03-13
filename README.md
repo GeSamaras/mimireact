@@ -1,8 +1,8 @@
-## Mimireact
+![image](https://github.com/user-attachments/assets/bcc0c38f-eddb-460c-b552-1852a976c48c)## Mimireact
 
 An imageboard, with pinterest-y vibes, for cool pics and cool poeple 🤠
 
-![mimi](https://imgur.com/a/mhVMK2j)
+![mimi](https://i.imgur.com/CCDMmc0.png)
 
 
 ## Stack
