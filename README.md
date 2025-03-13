@@ -2,11 +2,8 @@
 
 An imageboard, with pinterest-y vibes, for cool pics and cool poeple 🤠
 
-![mimi](https://ibb.co/G05SXjy)
-![mimi]([https://imgur.com/ppHK95D](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGRmcnQxMWNldGc2MG04aWhrMDl0cW11OGx1NGxzZ2p1MTVpZzdvaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SbPtsV10EW2lj4SeFY/giphy.gif))
+![mimi]([https://imgur.com/ppHK95D](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGRmcnQxMWNldGc2MG04aWhrMDl0cW11OGx1NGxzZ2p1MTVpZzdvaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SbPtsV10EW2lj4SeFY/giphy.gif)](https://imgur.com/a/mhVMK2j))
 
-![mimireact](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGRmcnQxMWNldGc2MG04aWhrMDl0cW11OGx1NGxzZ2p1MTVpZzdvaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SbPtsV10EW2lj4SeFY/giphy.gif 
- "bro just work") 
 
 ## Stack
 
