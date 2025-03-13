@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bcc0c38f-eddb-460c-b552-1852a976c48c)## Mimireact
+# Mimireact
 
 An imageboard, with pinterest-y vibes, for cool pics and cool poeple 🤠
 
