@@ -11,14 +11,14 @@ import { SimpleUploadButton } from "./simple-upload-button";
 export function TopNav() {
   return (
 
-    <nav className="flex w-full items-center justify-between p-2 bg-gradient-to-r from-blue-400 to-blue-800   border-8 border-slate-400 shadow-inner">
+    <nav className="flex w-full items-center justify-evenly p-2 bg-gradient-to-r from-blue-400 to-blue-800   border-8 border-slate-400 shadow-inner">
       <div className="flex items-center gap-2">
         <div className="bg-gray-300 border-2 border-gray-500 p-1 text-black font-bold">
           mimireact
         </div>
       </div>
 
-      <div className="flex flex-row items-center gap-4 ">
+      <div className="flex flex-row items-center gap-4">
         <SignedOut>
           <SignInButton />
         </SignedOut>

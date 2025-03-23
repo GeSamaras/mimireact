@@ -9,6 +9,7 @@ const coreConfig = {
   images: {
     remotePatterns: [{ hostname: "utfs.io" }],
   },
+  // setting these to true for quicker build process
   typescript: {
     ignoreBuildErrors: true,
   },

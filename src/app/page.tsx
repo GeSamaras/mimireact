@@ -5,22 +5,20 @@ import { getMyImages } from "~/server/queries";
 
 
 // https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
-// 
 export const dynamic = "force-dynamic";
 
 async function Images() {
   const images = await getMyImages();
-
   return (
-    <div className="columns-3 md:columns-4 lg:columns-5 p-16">
+    <div className="columns-2 md:columns-4 lg:columns-5">
       {images.map((image) => (
         <div key={image.id} className="relative">
           <Link href={`/img/${image.id}`}>
-            <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-xl break-inside-avoid gap-8 m-3 transition duration-300 transform hover:scale-105 outline outline-slate-600 opacity-90">
+            <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded-xl break-inside-avoid gap-4 m-3 transition duration-300 transform hover:scale-105 outline outline-slate-300 opacity-80">
               <img
                 src={image.url}
                 alt={image.name}
-                className="object-cover w-full h-full hover:opacity-90 hover:shadow-sky-100 shadow-sm transition-opacity rounded-xl "
+                className="object-cover w-full h-full hover:opacity-100 hover:shadow-sky-100 shadow-sm transition-opacity rounded-xl "
               />
             </div>
           </Link>
@@ -36,7 +34,7 @@ export default async function HomePage() {
   return (
     <main className="">
       <SignedOut>
-        <div className="h-full w-full text-center text-2xl">
+        <div className="h-full w-full text-center text-2xl p-4">
           Please sign in above
         </div>
       </SignedOut>

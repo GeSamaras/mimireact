@@ -29,7 +29,7 @@ export async function FullPageImageView(props: { photoId: string }) {
   const userInfo = await clerkClient.users.getUser(image.userId);
 
   return (
-    <div className="grid justify-center text-white border-16 p-8 w-auto ">
+    <div className="grid justify-center text-white border-16 p-8 w-auto">
       <div className="flex justify-center rounded-xl h-auto w-fit">
         <img src={image.url} className="object-contain w-auto h-fit rounded-xl" alt={image.name} />
       </div>
