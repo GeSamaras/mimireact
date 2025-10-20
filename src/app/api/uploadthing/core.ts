@@ -10,7 +10,7 @@ const f = createUploadthing();
 export const ourFileRouter = {
   imageUploader: f({ image: { maxFileSize: "16MB", maxFileCount: 80 } })
     .middleware(async ({  }) => {
-      const user = auth();
+      const user = await auth();
       if (!user.userId) throw new UploadThingError("Unauthorized");
 
       const fullUserData = await clerkClient.users.getUser(user.userId);

@@ -8,7 +8,7 @@ import analyticsServerClient from "./analytics";
 
 // 
 export async function getMyImages() {
-  const user = auth();
+  const user = await auth();
   if (!user.userId) throw new Error("Unauthorized");
 
   const images = await db.query.images.findMany({
@@ -21,7 +21,7 @@ export async function getMyImages() {
 
 export async function getImage(id: number) {
 
-  const user = auth();
+  const user = await auth();
   if (!user.userId) throw new Error("Unauthorized");
 
   // runs through the db to get all images
@@ -38,7 +38,7 @@ export async function getImage(id: number) {
 }
 
 export async function deleteImage(id: number) {
-  const user = auth();
+  const user = await auth();
   // checks if the user pressing "delete" is the author
   if (!user.userId) throw new Error("Unauthorized");
 
